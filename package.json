@@ -1,0 +1,16 @@
+{
+  "name": "ai-code-reviewer",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  },
+  "scripts": {
+    "frontend": "cd Frontend && npm run dev",
+    "backend": "cd Backend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+
+    "build": "cd Frontend && npm install && npm run build",
+
+    "start": "cd Backend && npm install && npm start"
+  }
+}
